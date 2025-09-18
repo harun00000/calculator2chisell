@@ -1,5 +1,5 @@
-#include <functions.c>
-double num1=0, num2=0;
+#include <functions.h>
+double num1=0.0, num2=0.0;
 char operator=0; 
 
 int main(){
@@ -8,11 +8,11 @@ scanf("%lf %c %lf", &num1, &operator, &num2); //пользователь вво�
 
 if (operator == '+'){
     printf("%lf\n", sum(num1, num2));
-} elif (operator == '-'){
+} else if (operator == '-'){
     printf("%lf\n", diff(num1, num2));
-} elif (operator== '*'){
-    printf("%lf\n", mult(num1, num2))
-} elif (operator=='/'){
+} else if (operator== '*'){
+    printf("%lf\n", mult(num1, num2));
+} else if (operator=='/'){
     if (num2==0){
         printf("деление на 0");
     }else{
