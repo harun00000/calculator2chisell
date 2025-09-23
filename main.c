@@ -1,25 +1,16 @@
 #include "functions.h"
-double num1=0.0, num2=0.0;   //объявление переменных
-char operator=0; 
+#include "input_check.h"
+#include "proverka.h"
+#include <stdio.h>
 
 int main(){
-printf("Введите выражение\n");
-scanf("%lf %c %lf", &num1, &operator, &num2);    //пользователь вводит числа
+    double num1=0, num2=0;   
+    char oper=0;
+    int count=0;
 
-if (operator == '+'){                            // проверка операторов
-    printf("%lf\n", sum(num1, num2));
-} else if (operator == '-'){
-    printf("%lf\n", diff(num1, num2));
-} else if (operator== '*'){
-    printf("%lf\n", mult(num1, num2));
-} else if (operator=='/'){
-    if (num2==0){
-        printf("div by zero");                 //проверка дел.на 0
-    }else{
-        printf("%lf\n", div(num1, num2));       
-    }
-} else{
-    printf("Error. Please, try again");           //проверка если ввели ерунду
-}
-    return 0;
+    input_check(count, &num1, &num2, &oper);
+
+    proverka(oper, num1, num2);
+
+    return 0;  
 }

@@ -1,8 +1,10 @@
 #include "input_check.h"
-void input_check(int count, double num1, double num2, char operator){
+#include <stdio.h>
+
+void input_check(int count, double* num1, double* num2, char* oper){
   do {
     printf("input operation: ");
-    count =scanf("%lf %c %lf", &num1, &operator, &num2);
+    count = scanf(" %lf %c %lf", num1, oper, num2);
     if (count == 3) {
         break;
     } else {
