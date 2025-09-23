@@ -1,0 +1,1 @@
+void input_check(int count, double num1, double num2, char operator);
