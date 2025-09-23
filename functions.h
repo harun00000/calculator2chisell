@@ -1,9 +1,5 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
-
 double sum(double num1, double num2);
 double diff(double num1, double num2);
 double mult(double num1, double num2);
 double div(double num1, double num2);
 
-#endif // FUNCTIONS_H

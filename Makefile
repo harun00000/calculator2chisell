@@ -1,12 +1,9 @@
 CC = gcc
 TARGET = main.exe
 
-# PREF_OBJ = ./bin/
 
 SRC_FILES = $(wildcard *.c)
-# main.c func.c input_check.c proverka.c -> main.o ...
-# # main.c func.c input_check.c proverka.c -> % -> main -> func -> input_check -> proverka
-OBJ_FILES = $(patsubst %.c,%.o,$(SRC_FILES)) # pattern substution 
+OBJ_FILES = $(patsubst %.c,%.o,$(SRC_FILES)) 
 
 all : $(TARGET) clear
 
