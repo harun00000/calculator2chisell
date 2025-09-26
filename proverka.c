@@ -1,7 +1,11 @@
  #include <stdio.h>
  #include "proverka.h"
  #include "functions.h"
+
+ // TODO: naming
+ // TODO: separate compute logic and output
  void proverka(char oper, double num1, double num2){
+
     if (oper == '+'){                         
         printf("%lf\n", sum(num1, num2));
     } else if (oper == '-'){

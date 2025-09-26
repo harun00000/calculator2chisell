@@ -2,8 +2,8 @@ CC = gcc
 TARGET = main.exe
 
 
-SRC_FILES = $(wildcard *.c)
-OBJ_FILES = $(patsubst %.c,%.o,$(SRC_FILES)) 
+SRC_FILES = $(wildcard *.c)  # TODO: remove
+OBJ_FILES = $(patsubst %.c,%.o,$(SRC_FILES))
 
 all : $(TARGET) clear
 

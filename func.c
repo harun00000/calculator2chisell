@@ -10,5 +10,7 @@ double mult(double num1, double num2){   // multiplication
     return num1 * num2;
 }
 double div(double num1, double num2){    //division
+    // TODO: zero division!
     return num1 / num2;
 }
+
